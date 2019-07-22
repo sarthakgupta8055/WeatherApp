@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8055 Weather App</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/weather.css">
+</head>
+<body>
+	<header>
+		<div class="container-fluid text-center">
+			<h1>Around Me!</h1>
+		</div>
+	</header>
+	<div class="container text-center">
+		<div>
+			<input type="text" name="loaction" id="inputSearch" placeholder="Enter city">
+			<input type="button" name="btnSearch" id="btnSearch" value="Check">	
+		</div>
+		<div class="m-2">
+			<p class="text-muted">or</p>
+			<button name="btnNearMe" id="btnNearMe">Near me</button>		
+		</div>	
+	</div>
+	<div id="display" class="text-center">
+		<div>
+			<label class="font-large">Location :</label>
+			<label id="location"></label>
+		</div>
+		<div>
+			<label class="font-large">Temperature :</label>
+			<label id="temp"></label>	
+		</div>
+		<div>
+			<label class="font-large">Humidity :</label>
+			<label id="humidity"></label>
+		</div>
+		<div>
+			<label class="font-large">Enviornment :</label>
+			<label id="weather"></label>
+			<img src="" alt="" id="icon">
+		</div>
+	</div>
+
+	<footer>
+	<!-- 
+		<div>
+		Footer	
+		</div>
+	 -->
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="scripts/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+#location{
+  font-family: "Courier New";
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}
+
+#humidity{
+	font-family: "Courier New";
+	font-size: 25px;
+	font-weight: bold;
+	color: green;
+}
+
+#temp{
+	font-family: "Courier New";
+	font-weight: bold;
+	font-size: 25px;
+	color: grey;
+}
+
+#weather{
+	font-weight: bold;
+	font-size: 30px;
+	font-family: "Courier New";
+	color: yellow;
+}
+.font-large{
+	font-size: 30px;
+}
