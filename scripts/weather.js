@@ -7,7 +7,7 @@ let icon = document.getElementById("icon");
 var latitude=0;
 var longitude=0;
 var generatedData;
-const key='41573cdedb62ca7cdb2ea7a2f456b3b0';
+const key='****';
 btnNearMe.addEventListener("click",locateMe);
 btnSearch.addEventListener("click",checkWeather);
 function locateMe() {
