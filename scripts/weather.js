@@ -1,5 +1,5 @@
 'use strict';
-console.log("js Loaded");
+//console.log("js Loaded");
 var searchInput=document.getElementById('inputSearch');
 var btnNearMe=document.getElementById('btnNearMe');
 var btnSearch=document.getElementById('btnSearch');
@@ -7,7 +7,7 @@ let icon = document.getElementById("icon");
 var latitude=0;
 var longitude=0;
 var generatedData;
-const key='****';
+const key='41573cdedb62ca7cdb2ea7a2f456b3b0';
 btnNearMe.addEventListener("click",locateMe);
 btnSearch.addEventListener("click",checkWeather);
 function locateMe() {
@@ -17,7 +17,6 @@ function locateMe() {
 }
 var x = document.getElementById("disp");
 function showPosition(position) {
-	//console.log(position);
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude;
 	checkWeather();
@@ -37,6 +36,7 @@ function checkWeather() {
     	}		
 	}
 	else{
+		console.log("AUTO DETECT");
 		let Link = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" 
 		+ longitude 	+ "&appid=" + key;
 		var httpRequest = new XMLHttpRequest();
@@ -48,6 +48,8 @@ function checkWeather() {
 	    	 extractData();
            }
     	}
+    	latitude=0;
+    	longitude=0;
 	}
 }
 function extractData() {
@@ -64,7 +66,6 @@ function extractData() {
 	console.log("Name: " + name);
 }
 function display(temp,humidity,name,enviornment) {
-
 	document.getElementById('location').innerHTML=(name);
 	document.getElementById('humidity').innerHTML=(humidity + "%");
 	document.getElementById('temp').innerHTML=(temp + "Celsius");
