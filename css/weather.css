@@ -1,8 +1,19 @@
+body,html{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	background-color: powderblue;
+}
 #location{
   font-family: "Courier New";
   font-size: 30px;
   font-weight: bold;
   color: blue;
+}
+
+#inputSearch{
+	border: none;
+	border-bottom: 2px solid grey;
 }
 
 #humidity{
@@ -27,4 +38,13 @@
 }
 .font-large{
 	font-size: 30px;
+}
+.btn{
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.padd-1{
+	padding: 5px;
 }
